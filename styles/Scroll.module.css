@@ -1,0 +1,154 @@
+
+
+.scrolldownContainer {
+  --size: 100px;
+  --blob1: -8px;
+  --blob2: 10px;
+  --blob2last: 26px;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+}
+
+.ico {
+  margin: 0 auto;
+  text-align: center;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: url("#goo");
+}
+.circle {
+background: white;
+border-radius: 50%;
+display: inline-block;
+height: var(--size);
+width:  var(--size);
+
+position: absolute;
+top: 50%;
+left:50%;
+transform: translateX(-50%) translateY(-50%);
+transform-origin: 0%;
+}
+.circletop {
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+  height: var(--size);
+  width: var(--size);
+
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  transform-origin: 0%;
+  /* height / 3
+  width / 2.4 */
+  height: calc(var(--size) / 3);
+  width: calc(var(--size) / 2.4);
+  animation: blob-1-anim 3s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+  z-index: 0;
+  top:0;
+
+    
+}
+.circlebottom {
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    height: var(--size);
+    width: var(--size);
+
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    transform-origin: 0%;
+    height: calc(var(--size) / 3);
+    width: calc(var(--size) / 2.4);
+    animation: blob-2-anim 3s cubic-bezier(0.770, 0.000, 0.175, 1.000)  infinite;
+    z-index: 9;
+    bottom:0px;
+}
+    
+  
+  
+  
+.starrow{
+fill:#55544F;
+animation: scrolly 3s cubic-bezier(0.770, 0.000, 0.175, 1.000) forwards infinite;
+perspective: 9000px;
+transform: translateZ(0);
+transform-origin: bottom;
+}
+
+
+.svg {z-index:9;position:relative;}
+  
+@keyframes blob-1-anim {
+  0%{
+    transform:translateX(-50%) translateY(0);
+  }
+  14%{
+    transform:translateX(-50%) translateY(var(--blob1));
+  }
+  24% {
+    transform:translateX(-50%) translateY(0);
+  }
+  100% {
+    transform:translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes blob-2-anim {
+  0% {
+    transform: scale(1) translate(-50%,var(--blob2));
+  }
+  30% {
+    transform: scale(1) translate(-50%,var(--blob2));
+  }
+  70% {
+    transform: scale(1) translate(-50%,var(--blob2));
+    
+  }
+  95% {
+    transform: scale(1) translate(-50%,var(--blob2last));
+    
+    
+  }
+  100% {
+    transform: scale(1) translate(-50%,var(--blob2));
+  }
+}
+
+@keyframes scrolly {
+  0% {
+    transform: translate3d(0,-150%,0) rotateX(90deg) scale(0.5) skewX(3deg);
+  }
+  30% {
+    transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
+  }
+  70% {
+    transform: translate3d(0,0,0) rotateX(0deg) scale(1) skewX(0deg);
+  }
+  95% {
+    transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+  }
+  100% {
+    transform: translate3d(0,50%,0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .scrolldownContainer {
+    --size: 50px;
+    --blob1: -4px;
+    --blob2: 5px;
+    --blob2last: 13px;
+
+  }
+}

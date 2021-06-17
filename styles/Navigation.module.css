@@ -1,0 +1,11 @@
+.navbartransparent {
+    background-color: transparent;
+}
+.navbarblack {
+    background-color: black;
+}
+@media screen and (max-width: 600px) {
+    .navbartransparent {
+        background-color: black;
+    }
+}

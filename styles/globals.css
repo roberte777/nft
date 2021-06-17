@@ -1,9 +1,15 @@
 html,
+
 body {
+  --text-size: 10rem;
+  --small-text-size: 1.5rem;
+  --header-text-size: calc(var(--small-text-size) * 2);
+
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+   
 }
 
 a {
@@ -14,3 +20,59 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@media only screen and (max-width: 1127px) {
+   body {
+     --text-size: 8rem;
+     
+   }
+
+  
+}
+
+@media only screen and (max-width: 979px) {
+    body {
+      --text-size: 7rem;
+    }
+  
+}
+@media only screen and (max-width: 1127px) {
+  body {
+    --text-size: 8rem;
+  }
+
+ 
+}
+
+@media only screen and (max-width: 800px) {
+   body {
+     --text-size: 5rem;
+   }
+ 
+}
+@media only screen and (max-width: 550px) {
+  body {
+    --text-size: 3rem;
+    --header-text-size: calc(var(--small-text-size) * 1.1);
+
+  }
+
+}
+
+@media only screen and (max-width: 330px) {
+  body {
+    --text-size: 2.5rem;
+    --small-text-size: 1.2rem;
+    
+  }
+
+}
+@media only screen and (max-width:279px) {
+  body {
+    --text-size: 2.3rem;
+  }
+
+}
+
+
+
