@@ -184,6 +184,8 @@
 
 .slide {
     position: relative;
+    height: 20rem;
+    width: 100%;
     transform: scale(.5);
     transition: transform 500ms;
 }
@@ -194,6 +196,8 @@
 }
 .activeSlide {
     position: relative;
+    height: 20rem;
+    width: 100%;
     transform: scale(1)
 }
 
