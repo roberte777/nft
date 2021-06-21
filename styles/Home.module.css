@@ -183,6 +183,7 @@
 }
 
 .slide {
+    position: relative;
     transform: scale(.5);
     transition: transform 500ms;
 }
@@ -192,6 +193,7 @@
     margin: 0 auto;
 }
 .activeSlide {
+    position: relative;
     transform: scale(1)
 }
 

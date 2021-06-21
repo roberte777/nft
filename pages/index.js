@@ -102,7 +102,7 @@ export default function Home() {
                   </div>
                   <div className={styles.smalltext}>
                     Connect with the gratest sportspeople of all time through NFTs.
-                    For the first time in history, you can own part of your Icon's story
+                    For the first time in history, you can own part of your Icon&apos;s story
                     forever, or trade it.
                   </div>
                 </div>
@@ -127,7 +127,7 @@ export default function Home() {
               {athletes.map((img, idx) => (
                 
                 <div className={idx == imageIndex ? (styles.activeSlide): styles.slide} key={img}>
-                  <Image objectFit={"fill"} src={img} alt={img} />
+                  <img src={img} alt={img} />
                 </div>)
               )}
             
