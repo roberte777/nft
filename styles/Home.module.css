@@ -176,27 +176,19 @@
     padding: 0 10%;
 }
 
-.slide img{
-    width: 100%;
-    height: 20rem;
-    margin: 0 auto;
-}
+
 
 .slide {
     position: relative;
-    height: 20rem;
+    height: var(--big-img-size);
     width: 100%;
     transform: scale(.5);
     transition: transform 500ms;
 }
-.activeSlide img{
-    width: 100% !important;
-    height: 20rem;
-    margin: 0 auto;
-}
+
 .activeSlide {
     position: relative;
-    height: 20rem;
+    height: var(--big-img-size);
     width: 100%;
     transform: scale(1)
 }

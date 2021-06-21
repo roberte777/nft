@@ -5,7 +5,7 @@ body {
   --small-text-size: 1.7rem;
   --header-text-size: calc(var(--small-text-size) * 2);
   --img-size: 10rem;
-  --big-img-size: 25rem;
+  --big-img-size: 35rem;
   --button-color: transparent;
 
   padding: 0;
@@ -28,7 +28,7 @@ a {
 
 @media only screen and (max-width: 1300px) {
   body {
-    --big-img-size: 20rem;
+    --big-img-size: 25rem;
     
   }
 
@@ -50,6 +50,12 @@ a {
       --text-size: 7rem;
       --small-text-size: 1.5rem;
       --button-color: black;
+    }
+  
+  }
+  @media only screen and (max-width: 940px) {
+    body {
+      --big-img-size: 20rem;
     }
   
   }
@@ -85,14 +91,14 @@ a {
 
 @media only screen and (max-width: 690px) {
   body {
-    --big-img-size: 20rem;
+    --big-img-size: 30rem;
   }
 
 }
 
 @media only screen and (max-width: 614px) {
   body {
-    --big-img-size: 20rem;
+    --big-img-size: 30rem;
   }
 
 }
@@ -107,14 +113,14 @@ a {
 
 @media only screen and (max-width: 530px) {
   body {
-    --big-img-size: 20rem;
+    --big-img-size: 25rem;
   }
 
 }
 
 @media only screen and (max-width: 486px) {
   body {
-    --big-img-size: 15rem;
+    --big-img-size: 25rem;
   }
 
 }
