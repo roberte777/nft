@@ -45,7 +45,7 @@ export default function Home() {
       </Head>
       <div className={styles.toppage}>
         <div className={styles.herobg}>
-          <Image src='/stadium.jpg' layout="fill" objectFit="cover" className={styles.img}/>
+          {/* <Image src='/mainBgImg.jpg' layout="fill" objectFit="cover" className={styles.img}/> */}
         </div>
         <div className={styles.topmaincontent}>
           <div className={styles.landingcatcher}>

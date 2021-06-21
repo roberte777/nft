@@ -2,7 +2,7 @@ html,
 
 body {
   --text-size: 10rem;
-  --small-text-size: 1.5rem;
+  --small-text-size: 1.7rem;
   --header-text-size: calc(var(--small-text-size) * 2);
 
   padding: 0;
@@ -33,15 +33,15 @@ a {
 @media only screen and (max-width: 979px) {
     body {
       --text-size: 7rem;
+      --small-text-size: 1.5rem;
     }
   
-}
-@media only screen and (max-width: 1127px) {
+  }
+@media only screen and (max-width: 900px) {
   body {
-    --text-size: 8rem;
+    --text-size: 6rem;
   }
 
- 
 }
 
 @media only screen and (max-width: 800px) {
