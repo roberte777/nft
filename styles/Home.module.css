@@ -102,6 +102,10 @@
     margin: 0 auto;
     margin-bottom: 10%;
 }
+.featuredcarousel button {
+    /* background-color: var(--button-color); */
+    z-index: 10000;
+}
 
 .featuredcarousel::before {
     content: '';
@@ -115,11 +119,81 @@
 
 }
 .carouselItem {
-    height:60vh;
+    width: 400px;
+    height: 500px;
+    background-size: cover !important;
+    background-position: center;
 }
 
+.aboutUs {
+    margin-bottom: 10%;
+}
 
+.aboutUsTitleContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.aboutUsTitle {
+    font-size: var(--header-text-size);
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: solid;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.aboutUsText {
+    font-size: calc(var(--small-text-size) /1.5) ;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.businessInquiries{
+    margin-bottom: 10%;
+}
+.businessInquiriesTitleContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.businessInquiriesTitle {
+    font-size: var(--header-text-size);
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: solid;
+    width: 50%;
+    margin-bottom: 5%;
+}
+.businessInquiriesText {
+    font-size: calc(var(--small-text-size) /1.5) ;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.slide img{
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+.slide {
+    transform: scale(.5);
+    transition: transform 500ms;
+}
+.activeSlide img{
+    width: 100% !important;
+    height: 20rem;
+    margin: 0 auto;
+}
+.activeSlide {
+    transform: scale(1)
+}
 
 
 @media only screen and (max-width: 1127px) {
@@ -138,13 +212,8 @@
     padding-left: 1%;
     padding-right: 20%;
    }
-   .featuredcarousel {
-       width: 100%;
-       padding: 0 0;
-   }
-   .featuredcarousel Button {
-       display: none;
-   }
+
+   
 }
 @media only screen and (max-width: 550px) {
     .smalltext {

@@ -1,0 +1,14 @@
+.footerContainer {
+    height: 30vh;
+    width: 100vw;
+    background-color: #449764;
+    display: flex;
+    justify-content: center;
+}
+.column {
+    padding: 0 5px;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

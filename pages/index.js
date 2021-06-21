@@ -6,7 +6,8 @@ import styles from '../styles/Home.module.css'
 import {motion}  from "framer-motion"
 import Button from 'react-bootstrap/Button'
 import ScrollDown from '../components/ScrollDown'
-
+import Slider from 'react-slick';
+import Footer from '../components/Footer';
 
 
 const container = {
@@ -22,14 +23,39 @@ const container = {
   },
 };
 
+const athletes = ['/lebron.jpg','/messi.jpg','/football.jpg', '/stadium.jpg']
+
 
 export default function Home() {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const [imageIndex, setImageIndex] = useState(0)
   useEffect(()=> {
     const heightOutput = document.querySelector('#height')
-    console.log(heightOutput)
+    
+
 
   },[])
+
+  const settings = {
+    // className: "center",
+    centerMode: true,
+    infinite: true,
+    speed: 500,
+    centerPadding: 0,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    beforeChange: (current,next) => setImageIndex(next),
+    responsive: [
+      {
+        breakpoint: 690,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      
+    ]
+  };
+  
 
   return (
     <div className={styles.container}>
@@ -41,6 +67,18 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"></link>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+        <link
+        rel="stylesheet"
+        type="text/css"
+        charset="UTF-8"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      />
+
 
       </Head>
       <div className={styles.toppage}>
@@ -86,32 +124,48 @@ export default function Home() {
         </div>
         <div className={styles.carouselContainer}>
           <div  className={styles.featuredcarousel} >
-            <ItemsCarousel
-              infiniteLoop={false}
-              gutter={12}
-              activePosition={'center'}
-              chevronWidth={60}
-              disableSwipe={false}
-              alwaysShowChevrons={false}
-              numberOfCards={1}
-              slidesToScroll={1}
-              outsideChevron={false}
-              showSlither={true}
-              firstAndLastGutter={true}
-              activeItemIndex={activeItemIndex}
-              requestToChangeActive={value => setActiveItemIndex(value)}
-              rightChevron={<Button>{'>'}</Button>}
-              leftChevron={<Button>{'<'}</Button>}
-            >
-              <div className={styles.carouselItem} style={{background: 'url(/stadium.jpg)'}}>First card</div>
-              <div className={styles.carouselItem} style={{background: 'url(/stadium.jpg)' }}>Second card</div>
-              <div className={styles.carouselItem} style={{background: 'url(/stadium.jpg)' }}>Third card</div>
-              <div className={styles.carouselItem} style={{background: 'url(/stadium.jpg)' }}>Fourth card</div>
-          </ItemsCarousel>
+            <Slider {...settings} >
+              {athletes.map((img, idx) => (
+                
+                <div className={idx == imageIndex ? (styles.activeSlide): styles.slide} key={img}>
+                  <img src={img} alt={img} />
+                </div>)
+              )}
+            
+            </Slider>
           </div>
         </div>
       </div>
+      <div className={styles.aboutUs}>
+        <div className={styles.aboutUsTitleContainer}>
+          <div className={styles.aboutUsTitle}>
+            About Us
+          </div>
+        </div>
+        <div className={styles.aboutUsText}>
+          Our goal is to connect you to your favorite athletes. We offer digital collectables so you can own, collect, and trade the journey of your favorite icon.
+        </div>
+      </div>
+      <div className={styles.businessInquiries}>
+        <div className={styles.businessInquiriesTitleContainer}>
+          <div className={styles.businessInquiriesTitle}>
+            Business Inquiries
+          </div>
+        </div>
+        <div className={styles.businessInquiriesText}>
+          Reach out to the team by emailing us!
+        <div>
+          cadeIsCool@yahoo.com
+        </div>
+        </div>
+      </div>
+      <div>
 
+      </div>
+      <Footer />
     </div>
+        
+      
+
   )
 }
