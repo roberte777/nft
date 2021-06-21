@@ -127,7 +127,7 @@ export default function Home() {
               {athletes.map((img, idx) => (
                 
                 <div className={idx == imageIndex ? (styles.activeSlide): styles.slide} key={img}>
-                  <img src={img} alt={img} />
+                  <Image layout={'fill'} src={img} alt={img} />
                 </div>)
               )}
             
