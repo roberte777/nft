@@ -101,7 +101,7 @@ export default function Home() {
                     SPORTS <br /> HEROES
                   </div>
                   <div className={styles.smalltext}>
-                    Connect with the gratest sportspeople of all time through NFTs.
+                    Connect with the greatest sports-people of all time through NFTs.
                     For the first time in history, you can own part of your Icon&apos;s story
                     forever, or trade it.
                   </div>
