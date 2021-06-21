@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ItemsCarousel from 'react-items-carousel';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -128,7 +127,7 @@ export default function Home() {
               {athletes.map((img, idx) => (
                 
                 <div className={idx == imageIndex ? (styles.activeSlide): styles.slide} key={img}>
-                  <img src={img} alt={img} />
+                  <Image objectFit={"fill"} src={img} alt={img} />
                 </div>)
               )}
             
