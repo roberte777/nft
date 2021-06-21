@@ -27,7 +27,7 @@ export default function Navigation() {
     return (
        
             <Navbar className={color} style={{zIndex:100}}collapseOnSelect expand="md" variant="dark" fixed="top">
-                <Navbar.Brand href="#home">Cade is a Badass</Navbar.Brand>
+                <Navbar.Brand href="#home"></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className={styles.collapse}>
                     <Nav className="mr-auto">
