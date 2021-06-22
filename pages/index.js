@@ -91,19 +91,14 @@ export default function Home() {
                 <motion.div animate="visible" initial="hidden" transition={{}} variants={container} >
                   <div>
                     <span className={styles.bigwords1}>
-                      <span>CONNECT </span> <br />
-                      <span style={{width:'100%'}}>WITH YOUR </span>
+                      <span>LaunchNFT </span> <br />
+                      {/* <span style={{width:'100%'}}>WITH YOUR </span> */}
                     </span>
                   </div>
                 </motion.div>                
                 <div className={styles.topbottomtext}>
-                  <div className={styles.bigwords2}>
-                    SPORTS <br /> HEROES
-                  </div>
                   <div className={styles.smalltext}>
-                    Connect with the greatest sports-people of all time through NFTs.
-                    For the first time in history, you can own part of your Icon&apos;s story
-                    forever, or trade it.
+                    The Future of Fanhood is Here
                   </div>
                 </div>
 
@@ -142,7 +137,20 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.aboutUsText}>
-          Our goal is to connect you to your favorite athletes. We offer digital collectables so you can own, collect, and trade the journey of your favorite icon.
+        We are a start-up whose mission is to help collegiate athletes profit off their name, image, and likeness through the production, publication, and selling of NFTs. 
+        We believe that we can play a big role in bringing power back to the players by giving them the opportunity to grow their personal brand and then profiting off it.
+        </div>
+      </div>
+      <div className={styles.aboutUs}>
+        <div className={styles.aboutUsTitleContainer}>
+          <div className={styles.aboutUsTitle}>
+            Our Product:
+          </div>
+        </div>
+        <div className={styles.aboutUsText}>
+        We work closely with the athletes that we represent to make sure that the NFTs that we produce are true to who they are. 
+        This authenticity helps create a relationship between fans and athlete like we have never seen before. 
+        When you buy an NFT, you are buying part of your favorite athlete’s history and investing in their future.
         </div>
       </div>
       <div className={styles.businessInquiries}>
@@ -154,7 +162,7 @@ export default function Home() {
         <div className={styles.businessInquiriesText}>
           Reach out to the team by emailing us!
         <div>
-          cadeIsCool@yahoo.com
+          Cade@LaunchNFT.net
         </div>
         </div>
       </div>

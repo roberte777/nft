@@ -24,20 +24,22 @@
 }
 .landingcatcher {
     position: absolute;
-    top: 30%;
+    text-align: center;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -40%);
     max-width: 90%;
     width: 100%;
 }
 .landingtext {
     position: relative;
-    margin: 0 10px;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
 }
 
 .textcontainer {
-    color: white;
+    color: red;
     font-size: 30px;
     display: block;
     position: relative;
@@ -58,16 +60,20 @@
 
 .topbottomtext {
     display: flex;
+    text-align: center;
 }
-.bigwords2 {
+/* .bigwords2 {
     width: 60%;
     font-size: var(--text-size);
     color: green;
     line-height: 0.8;
     font-weight: 1000;
     letter-spacing: -0.04em;
-}
+} */
 .smalltext {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
     font-size: var(--small-text-size);
     line-height: 1.3;
     color: #F9F7F0;
@@ -110,7 +116,7 @@
 .featuredcarousel::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     display: block;
     height: 60%;
@@ -204,12 +210,7 @@
    .topbottomtext {
        flex-direction: column;
    }
-   .smalltext {
-    margin: 0;
-    padding-top: 10%;
-    padding-left: 1%;
-    padding-right: 20%;
-   }
+
 
    
 }
