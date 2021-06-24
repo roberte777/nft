@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>LaunchNFT</title>
+        <title>LaunchNFT Connect With Your Sports Heroes</title>
         <meta name="description" content="We are a start-up whose mission is to help collegiate athletes profit off their name, image, and likeness through the production, publication, and selling of NFTs." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -80,7 +80,7 @@ export default function Home() {
 
 
       </Head>
-      <div className={styles.toppage}>
+      <h1 className={styles.toppage}>
         <div className={styles.herobg}>
           {/* <Image src='/mainBgImg.jpg' layout="fill" objectFit="cover" className={styles.img}/> */}
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
           
           <ScrollDown />
         </div>
-      </div>
+      </h1>
       <div style={{height: '100%'}} className={styles.featuredAthletes}>
         <div className={styles.featuredTextContainer}>
           <div className={styles.featuredText}>An ever-growing list of athletes to collect and inspire</div>
