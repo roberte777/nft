@@ -1,3 +1,8 @@
+This project is not finished, is really simple, and was one of the first web apps I made with react.This is a simple NFT sales website made for a family member. It is really simple, made to sell his NFT's.
+
+Here is the website: https://launchnft.net/
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
